@@ -1,4 +1,4 @@
-# Support systems
+# Platforms
   + Windows XP or later, Linux, MacOS X
 
 # How to build
@@ -9,5 +9,7 @@
     + cmake -G "Visual Studio 14 2015 Win64" ../base03 -DCMAKE_BUILD_TYPE=RELEASE
   + Visual Studio 2015 Win32
     + cmake -G "Visual Studio 14 2015" ../base03 -DCMAKE_BUILD_TYPE=RELEASE
+  + Visual Studio 2008 Win32
+    + cmake -G "Visual Studio 9 2008" ../base03 -DCMAKE_BUILD_TYPE=RELEASE
   + GCC or Clang
-    + cmake .. -DCMAKE_BUILD_TYPE=RELEASE && make
+    + cmake ../base03 -DCMAKE_BUILD_TYPE=RELEASE && make
