@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{bf67e1e7-20e6-44c8-a72b-1f3f8a9dfa25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\valgrind">
+      <UniqueIdentifier>{7c403a4f-659c-49f8-9920-8f83843a0232}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\valgrind\valgrind.h">
+      <Filter>..\valgrind</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_annotations.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dynamic_annotations.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dynamic_annotations.gyp" />
+  </ItemGroup>
+</Project>
