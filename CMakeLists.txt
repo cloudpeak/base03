@@ -13,6 +13,7 @@ if (UNIX)
 
 add_definitions(-D__STDC_FORMAT_MACROS)
 
+
 elseif(WIN32)
 add_definitions(-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS)
 add_definitions(-D_CRT_SECURE_NO_DEPRECATE)
@@ -22,6 +23,8 @@ add_definitions(-D__STDC_FORMAT_MACROS)
 add_definitions(-DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS)
 add_definitions(-DNOMINMAX)
 add_definitions(-D_UNICODE)
+add_definitions (-DUNICODE )
+remove_definitions ( -D_MBCS )
 add_definitions(-D_CRT_RAND_S)
 add_definitions(-D"USE_ASH=1")
 endif()
